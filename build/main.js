@@ -20961,6 +20961,13 @@ var main_banner = {
             slidesToScroll: 1
             // autoplay: true
         });
+    },
+    scrollBtnInit: function scrollBtnInit() {
+        $('#scroll-btn').click(function () {
+            var nextSection = $('.benefits').offset().top;
+            $('html,body').animate({ scrollTop: nextSection }, 'slow');
+            console.log(nextSection);
+        });
     }
 };
 
@@ -20984,40 +20991,29 @@ Object.defineProperty(exports, "__esModule", {
 });
 var testimonials = {
     init: function init() {
-        $('#regular_carousel').slick({
+        $('#js--regular_carousel').slick({
             dots: true,
             slidesToShow: 3,
             slidesToScroll: 3,
             centerMode: false,
-            centerPadding: '0px',
             responsive: [{
                 breakpoint: 992,
                 settings: {
-                    centerMode: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 3,
                     centerPadding: '105px',
+                    centerMode: true,
+                    variableWidth: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
                     arrows: false
                 }
             }, {
-                breakpoint: 767,
+                breakpoint: 768,
                 settings: {
-                    centerMode: true,
+                    centerMode: false,
+                    variableWidth: false,
                     slidesToShow: 1,
-                    slidesToScroll: 3,
-                    centerPadding: '70px',
-                    arrows: false,
-                    variableWidth: true
-                }
-            }, {
-                breakpoint: 577,
-                settings: {
-                    centerMode: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 3,
-                    centerPadding: '-30px',
-                    arrows: false,
-                    variableWidth: true
+                    slidesToScroll: 1,
+                    arrows: false
                 }
             }]
 
@@ -21064,6 +21060,7 @@ $(document).ready(function () {
     _testimonials2.default.init();
     _header2.default.burgerInit();
     _main_banner2.default.init();
+    _main_banner2.default.scrollBtnInit();
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 

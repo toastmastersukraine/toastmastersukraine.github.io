@@ -1,82 +1,311 @@
-<head><link href="build/main.css" rel="stylesheet"></head>Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module build failed (from ./node_modules/twig-html-loader/index.js):
-  Error: ENOENT: no such file or directory, open 'G:\work\FORFORCE\toastmasters\private\pages\how_it_works\how_it_works.twig':
-  Error: ENOENT: no such file or directory, open 'G:\work\FORFORCE\toastmasters\private\pages\how_it_works\how_it_works.twig'
-  
-  - compiler.js:79 childCompiler.runAsChild
-    [toastmasters]/[html-webpack-plugin]/lib/compiler.js:79:16
-  
-  - Compiler.js:343 compile
-    [toastmasters]/[webpack]/lib/Compiler.js:343:11
-  
-  - Compiler.js:681 hooks.afterCompile.callAsync.err
-    [toastmasters]/[webpack]/lib/Compiler.js:681:15
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [toastmasters]/[tapable]/lib/Hook.js:154:20
-  
-  - Compiler.js:678 compilation.seal.err
-    [toastmasters]/[webpack]/lib/Compiler.js:678:31
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [toastmasters]/[tapable]/lib/Hook.js:154:20
-  
-  - Compilation.js:1423 hooks.optimizeAssets.callAsync.err
-    [toastmasters]/[webpack]/lib/Compilation.js:1423:35
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [toastmasters]/[tapable]/lib/Hook.js:154:20
-  
-  - Compilation.js:1414 hooks.optimizeChunkAssets.callAsync.err
-    [toastmasters]/[webpack]/lib/Compilation.js:1414:32
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [toastmasters]/[tapable]/lib/Hook.js:154:20
-  
-  - Compilation.js:1409 hooks.additionalAssets.callAsync.err
-    [toastmasters]/[webpack]/lib/Compilation.js:1409:36
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [toastmasters]/[tapable]/lib/Hook.js:154:20
-  
-  - Compilation.js:1405 hooks.optimizeTree.callAsync.err
-    [toastmasters]/[webpack]/lib/Compilation.js:1405:32
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [toastmasters]/[tapable]/lib/Hook.js:154:20
-  
-  - Compilation.js:1342 Compilation.seal
-    [toastmasters]/[webpack]/lib/Compilation.js:1342:27
-  
-  - Compiler.js:675 compilation.finish.err
-    [toastmasters]/[webpack]/lib/Compiler.js:675:18
-  
-  - Compilation.js:1261 hooks.finishModules.callAsync.err
-    [toastmasters]/[webpack]/lib/Compilation.js:1261:4
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [toastmasters]/[tapable]/lib/Hook.js:154:20
-  
-  - Compilation.js:1253 Compilation.finish
-    [toastmasters]/[webpack]/lib/Compilation.js:1253:28
-  
-  - Compiler.js:672 hooks.make.callAsync.err
-    [toastmasters]/[webpack]/lib/Compiler.js:672:17
-  
-  
-  - Compilation.js:1185 _addModuleChain
-    [toastmasters]/[webpack]/lib/Compilation.js:1185:12
-  
-  - Compilation.js:1097 processModuleDependencies.err
-    [toastmasters]/[webpack]/lib/Compilation.js:1097:9
-  
-</pre><script type="text/javascript" src="build/main.js"></script>
+<!doctype html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+    <title>Index Page</title>
+<link href="build/main.css" rel="stylesheet"></head>
+<body class="page page--about">
+<div class="page_wrapper">
+    <header>
+    <div class="menu-wrapper">
+        <nav class="navbar navbar-expand-lg main_menu">
+            <a class="navbar-brand main_menu_logo" href="./index.html">
+                <img src="/build/img/logo_main.svg" alt="Toastmasters" class="main_menu_logo_main">
+                <img src="/build/img/logo_white.svg" alt="Toastmasters" class="main_menu_logo_mobile">
+            </a>
+            <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#collapse_menu" aria-controls="collapse_menu" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="navbar-toggler-icon burger_icon">
+                    <div id="top"></div>
+                    <div id="mid"></div>
+                    <div id="bottom"></div>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse main_menu_collapse" id="collapse_menu">
+                <ul class="navbar-nav mr-auto main_menu_items">
+                    <li class="main_menu_item active">
+                        <div class="hover-line">
+                            <a class="main_menu_item_link" href="find_club.html">Find a Club </a>
+                        </div>
+                    </li>
+                    <li class="main_menu_item">
+                        <div class="hover-line">
+                            <a class="main_menu_item_link" href="how_it_works.html">How it works</a>
+                        </div>
+                    </li>
+                    <li class="main_menu_item">
+                        <div class="hover-line">
+                            <a class="main_menu_item_link" href="#">Contacts</a>
+                        </div>
+                    </li>
+                    
+                    <li class="main_menu_item main_menu_item--lang_mob main_menu_item--lang_mob_first active">
+                        <div class="hover-line">
+                            <a class="main_menu_item_link" href="#">English</a>
+                        </div>
+                    </li>
+                    <li class="main_menu_item main_menu_item--lang_mob">
+                        <div class="hover-line">
+                            <a class="main_menu_item_link" href="#">Українська</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="lang-and-social">
+                <div class="lang">
+                    <a href="#">Ua</a>
+                    <a href="#" class='active'>Eng</a>
+                </div>
+                
+    <div class="social">
+        
+            <a class="social_link" href="https://www.facebook.com/Toastmasters.Ukraine/" target="_blank">    
+                <svg>
+                    <use xlink:href="/build/img/symbol_sprite.svg#fb"></use>
+                </svg>
+            </a>
+        
+            <a class="social_link" href="https://twitter.com/Toastmasters_ua" target="_blank">    
+                <svg>
+                    <use xlink:href="/build/img/symbol_sprite.svg#twitter"></use>
+                </svg>
+            </a>
+        
+            <a class="social_link" href="#" target="_blank">    
+                <svg>
+                    <use xlink:href="/build/img/symbol_sprite.svg#tg"></use>
+                </svg>
+            </a>
+        
+    </div>
+
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <main class="page_wrapper__content">
+        
+    <div class="container how-it-works">
+        <h3>How it works</h3>
+        <h5>Listen the stories of our members about what they learnt after joining the community.</h5>
+
+        <div class="col-md-12">
+            <iframe id="video"  src="https://www.youtube.com/embed/vlDzYIIOYmM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="container benefits">
+        <h3>Meeting Format</h3>
+        <h5>Club has regular meetings once in a week for 1.5 hours where you can practice publiс speaking skills.
+            Every meeting has the same structured format. It consists of 3 main parts:</h5>
+
+        <div class="row">
+            <div class="item col-lg-4 col-md-12">
+                <div class="inner-wrapper">
+                    <div class="left w-100">
+                        <h4>Prepared Speeches</h4>
+
+                        <p class="description">
+                            Members deliver from five to seven minute prepared speeches followed by instruction
+                        </p>
+
+                        <ul>
+                            <li><span>learn from educational manuals</span></li>
+                            <li><span>choose your topic for the speech</span></li>
+                            <li><span>deliver the speech in your club      </span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item col-lg-4 col-md-12">
+                <div class="inner-wrapper">
+                    <div class="left w-100">
+                        <h4>Impromptu Session</h4>
+                        <p class="description">
+                            Speakers have up to 2 minutes to answer an unexpected question
+                        </p>
+                        <ul>
+                            <li><span>learn how formulate answers quickly</span></li>
+                            <li><span>practice organized responses</span></li>
+                            <li><span>master out-of-the box thinking</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item col-lg-4 col-md-12">
+                <div class="inner-wrapper">
+                    <div class="left w-100">
+                        <h4>Evaluation</h4>
+                        <p class="description">
+                            You will get feedback on your speech as well as time management, grammar mistakes
+                        </p>
+                        <ul>
+                            <li><span>know how to improve your speech</span></li>
+                            <li><span>get feedback from Grammarian</span></li>
+                            <li><span>get support and feedback from your clubmates</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container skills">
+        <div class="instructions">
+
+            <div class="row">
+                <div class="col-lg-12 title">
+                    <h3>How you will master your skills</h3>
+                    <h5>Educational system Pathways will help you to build the competencies you need to <br>
+                        communicate and become a better leader </h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 col-xl-6 description">
+                    <div class="numbers">
+                        <div id="one">1</div>
+                    </div>
+                    <div class="steps">
+                        <div class="step">
+                            <div class="header">
+                                <h4>Become a member</h4>
+                            </div>
+                            <p>
+                                As a guest you can visit club meetings and take part in impromptu session, but to deliver projects you need to be a member of a club. .<i class="show-lg p-inside-step"></i>
+                                Find your club to join, the payment is ~$8 per month..<i class="show-lg p-inside-step"></i>
+                                Club’s officers will explain you all the procedure.
+                            </p>
+                            <div class="find">Find a Club</div>
+                            <div class="margin-sm-visible d-sm-block"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5 col-xl-6 examples">
+                    <div class="examples-wrapper">
+                        <div id="ex-one">
+                            <img class="img-fluid" src="./img/how_works/photos/how3.png" alt="become a member">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 col-xl-6 description">
+                    <div class="numbers">
+                        <div id="two">2</div>
+                    </div>
+                    <div class="steps">
+                        <div class="step">
+                            <div class="header">
+                                <h4>Choose educational program</h4>
+                            </div>
+                            <p>«Pathways» helps you learn communication and leadership skills that need practice.<i class="show-lg p-inside-step"></i>
+                                You can choose from 10 specialized learning projects, including: Presentation Mastery, Dynamic Leadership to name a few.</p>
+                            <div id="meetings-link">
+                                <a href="https://www.toastmasters.org/pathways-overview" target="_blank">More about Pathways</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5 col-xl-6 examples">
+                    <div class="examples-wrapper">
+                        <div id="ex-two">
+                            <iframe  src="https://www.youtube.com/embed/vlDzYIIOYmM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row last">
+                <div class="col-lg-7 col-xl-6 description">
+                    <div class="numbers">
+                        <div>3</div>
+                    </div>
+                    <div class="steps">
+                        <div class="step">
+                            <div class="header">
+                                <h4>Deliver your first speech</h4>
+                            </div>
+                            <p>
+                                Learn  materials at the time convenient for you as «Pathways» is an online-based program.<i class="show-lg p-inside-step"></i>
+                                You will get all instructions and tips how to create good presentations. Book your first speech at the club’s meeting.<i class="show-lg p-inside-step"></i>
+                                Your fellow club members will give you evaluation and support throughout this journey.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5 col-xl-6 examples">
+                    <div id="ex-four" class="img-box">
+                        <div class="pen-text">Take a look at the first project</div>
+                        <img src="./img/how_works/manual/ice3.jpg" alt="first project">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    translate text. 
+
+    </main>
+    <footer class="footer page_wrapper__footer">
+        <div class="footer_content">
+            <p class='footer_copy'>
+                <span class="show-inline-lg">Copyright</span>
+                <span>© 2018 Toastmasters Ukraine</span>
+            </p>
+            <div class="footer_social">
+                <p>Follow us<span class="show-inline-lg"> on social media</span>:</p>
+                
+    <div class="social">
+        
+            <a class="social_link" href="https://www.facebook.com/Toastmasters.Ukraine/" target="_blank">    
+                <svg>
+                    <use xlink:href="/build/img/symbol_sprite.svg#fb"></use>
+                </svg>
+            </a>
+        
+            <a class="social_link" href="https://twitter.com/Toastmasters_ua" target="_blank">    
+                <svg>
+                    <use xlink:href="/build/img/symbol_sprite.svg#twitter"></use>
+                </svg>
+            </a>
+        
+            <a class="social_link" href="#" target="_blank">    
+                <svg>
+                    <use xlink:href="/build/img/symbol_sprite.svg#tg"></use>
+                </svg>
+            </a>
+        
+    </div>
+
+            </div>
+            <div class="footer_friends">
+                <img class="footer_friends_icon" src="/build/img/heart.svg" alt="heart">
+                <span>to</span>
+                <a href="https://tebenko.com" target="_blank">
+                    <img class="footer_friends_logo" src="/build/img/logo_tebenko.svg" alt="tebenko">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="http://localhost:35729/livereload.js"></script>
+<script type="text/javascript" src="build/main.js"></script></body>
+</html>
