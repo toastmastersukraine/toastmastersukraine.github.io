@@ -12111,7 +12111,7 @@ footer .logo img {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: url("/public/build/img/icon_check.svg");
+  background: url("/build/img/icon_check.svg");
   border-radius: 50%;
 }
 .benefits li span {
@@ -12147,7 +12147,7 @@ footer .logo img {
   content: "";
   display: block;
   position: absolute;
-  background: url("/public/build/img/ar-grey-right.svg") no-repeat;
+  background: url("/build/img/ar-grey-right.svg") no-repeat;
 }
 .benefits #inna-won:before {
   -webkit-transform: rotate(-34deg);
@@ -12159,7 +12159,7 @@ footer .logo img {
   content: "";
   display: block;
   position: absolute;
-  background: url("/public/build/img/ar-grey-left.svg") no-repeat;
+  background: url("/build/img/ar-grey-left.svg") no-repeat;
 }
 
 .faq {
@@ -12187,7 +12187,7 @@ footer .logo img {
   width: 20px;
   height: 20px;
   display: inline-block;
-  background: url("/public/build/img/icon_question.svg") no-repeat;
+  background: url("/build/img/icon_question.svg") no-repeat;
   position: relative;
   top: 4px;
 }
@@ -12204,7 +12204,7 @@ footer .logo img {
 .faq #listen-to:after {
   content: "";
   display: block;
-  background: url("/public/build/img/ar-grey-right.svg") no-repeat;
+  background: url("/build/img/ar-grey-right.svg") no-repeat;
   width: 34px;
   height: 34px;
   -webkit-transform: rotate(235deg);
@@ -12295,7 +12295,7 @@ footer .logo img {
   height: 26px;
   line-height: 26px;
   margin-top: 27px;
-  background: url("/public/build/img/icon_information.svg") no-repeat;
+  background: url("/build/img/icon_information.svg") no-repeat;
   padding-left: 35px;
   color: #096ca3;
   font-size: 17px;
@@ -12391,18 +12391,18 @@ footer .logo img {
 .main_banner_carousel-prev .prev-icon {
   width: 25px;
   height: 37px;
-  background: url("/public/build/img/prev.svg") no-repeat;
+  background: url("/build/img/prev.svg") no-repeat;
 }
 .main_banner_carousel-next .next-icon {
   width: 25px;
   height: 37px;
-  background: url("/public/build/img/next.svg") no-repeat;
+  background: url("/build/img/next.svg") no-repeat;
 }
 .main_banner_carousel-prev:hover .prev-icon {
-  background: url("/public/build/img/prev_hover.svg") no-repeat;
+  background: url("/build/img/prev_hover.svg") no-repeat;
 }
 .main_banner_carousel-next:hover .next-icon {
-  background: url("/public/build/img/next_hover.svg") no-repeat;
+  background: url("/build/img/next_hover.svg") no-repeat;
 }
 .main_banner_carousel_item {
   position: relative;
@@ -12506,7 +12506,7 @@ footer .logo img {
     content: "";
     display: block;
     position: absolute;
-    background: url("/public/build/img/arrow-yellow.svg") no-repeat;
+    background: url("/build/img/arrow-yellow.svg") no-repeat;
   }
 }
 .main_banner #scroll-btn {
@@ -12598,19 +12598,19 @@ footer .logo img {
   background-color: transparent;
 }
 .testimonials .slick-prev.slick-arrow {
-  background-image: url("/public/build/img/prev.svg");
+  background-image: url("/build/img/prev.svg");
   left: -15px;
 }
 .testimonials .slick-next.slick-arrow {
-  background-image: url("/public/build/img/next.svg");
+  background-image: url("/build/img/next.svg");
   top: 0;
   right: -35px;
 }
 .testimonials .slick-prev.slick-arrow:hover {
-  background-image: url("/public/build/img/prev_hover.svg");
+  background-image: url("/build/img/prev_hover.svg");
 }
 .testimonials .slick-next.slick-arrow:hover {
-  background-image: url("/public/build/img/next_hover.svg");
+  background-image: url("/build/img/next_hover.svg");
 }
 .testimonials .slick-dots {
   margin-top: 30px;
