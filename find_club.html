@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+    <title>Index Page</title>
+<link href="build/main.css" rel="stylesheet"></head>
+<body class="page page--find_club">
+<div class="page_wrapper">
+    <header>
+    <div class="menu-wrapper">
+        <nav class="navbar navbar-expand-lg main_menu">
+            <a class="navbar-brand main_menu_logo" href="./index.html">
+                <img src="/public/build/img/logo_main.svg" alt="Toastmasters" class="main_menu_logo_main">
+                <img src="/public/build/img/logo_white.svg" alt="Toastmasters" class="main_menu_logo_mobile">
+            </a>
+            <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#collapse_menu" aria-controls="collapse_menu" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="navbar-toggler-icon burger_icon">
+                    <div id="top"></div>
+                    <div id="mid"></div>
+                    <div id="bottom"></div>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse main_menu_collapse" id="collapse_menu">
+                <ul class="navbar-nav mr-auto main_menu_items">
+                    <li class="main_menu_item active">
+                        <div class="hover-line">
+                            <a class="main_menu_item_link" href="find.html">Find a Club </a>
+                        </div>
+                    </li>
+                    <li class="main_menu_item">
+                        <div class="hover-line">
+                            <a class="main_menu_item_link" href="it_works.html">How it works</a>
+                        </div>
+                    </li>
+                    <li class="main_menu_item">
+                        <div class="hover-line">
+                            <a class="main_menu_item_link" href="#">Contacts</a>
+                        </div>
+                    </li>
+                    
+                    <li class="main_menu_item main_menu_item--lang_mob main_menu_item--lang_mob_first active">
+                        <div class="hover-line">
+                            <a class="main_menu_item_link" href="#">English</a>
+                        </div>
+                    </li>
+                    <li class="main_menu_item main_menu_item--lang_mob">
+                        <div class="hover-line">
+                            <a class="main_menu_item_link" href="#">Українська</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="lang-and-social">
+                <div class="lang">
+                    <a href="#">Ua</a>
+                    <a href="#" class='active'>Eng</a>
+                </div>
+                
+    <div class="social">
+        
+            <a class="social_link" href="https://www.facebook.com/Toastmasters.Ukraine/" target="_blank">    
+                <svg>
+                    <use xlink:href="/public/build/img/symbol_sprite.svg#fb"></use>
+                </svg>
+            </a>
+        
+            <a class="social_link" href="https://twitter.com/Toastmasters_ua" target="_blank">    
+                <svg>
+                    <use xlink:href="/public/build/img/symbol_sprite.svg#twitter"></use>
+                </svg>
+            </a>
+        
+            <a class="social_link" href="#" target="_blank">    
+                <svg>
+                    <use xlink:href="/public/build/img/symbol_sprite.svg#tg"></use>
+                </svg>
+            </a>
+        
+    </div>
+
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <main class="page_wrapper__content">
+        
+    <div class="find-filters">
+        <div class="container">
+            <div class="row header">
+                <h3>Find your club</h3>
+                <div class="col-12 filters">
+                    <div class="city filter-item" tabindex="0">
+                        <div class="check-header">
+                            <p>choose a city<i class="fas fa-sort-down"></i></p>
+                        </div>
+                        <form>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="city1" value="option1">
+                                <label class="form-check-label" for="city1">Kyiv</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="city2" value="option2">
+                                <label class="form-check-label" for="city2">Odesa</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="city3" value="option3">
+                                <label class="form-check-label" for="city3">Zhytomyr</label>
+                            </div>
+                            <div class="btns">
+                                <button class="clear" type='button'>Clear</button>
+                                <button class="apply" type='submit'>Apply</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="lang filter-item" tabindex="0">
+                        <div class="check-header">
+                            <p>meeting language<i class="fas fa-sort-down"></i></p>
+                        </div>
+                        <form>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="lang1" value="option1">
+                                <label class="form-check-label" for="lang1">English</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="lang2" value="option2">
+                                <label class="form-check-label" for="lang2">German</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="lang3" value="option3">
+                                <label class="form-check-label" for="lang3">Ukrainian</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="lang4" value="option3">
+                                <label class="form-check-label" for="lang4">Russian</label>
+                            </div>
+                            <div class="btns">
+                                <button class="clear" type='button'>Clear</button>
+                                <button class="apply" type='submit'>Apply</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="days filter-item" tabindex="0">
+                        <div class="check-header" >
+                            <p>choose a day<i class="fas fa-sort-down"></i></p>
+                        </div>
+                        <form>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="day1" value="option1" disabled>
+                                <label class="form-check-label" for="day1">Monday</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="day2" value="option2">
+                                <label class="form-check-label" for="day2">Tuesday</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="day3" value="option3">
+                                <label class="form-check-label" for="day3">Wednesday </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="day4" value="option4">
+                                <label class="form-check-label" for="day4">Thursday</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="day5" value="option5" disabled>
+                                <label class="form-check-label" for="day5">Friday</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="day6" value="option6">
+                                <label class="form-check-label" for="day6">Saturday </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="day7" value="option7">
+                                <label class="form-check-label" for="day7">Sanday </label>
+                            </div>
+                            <div class="btns">
+                                <button class="clear" type='button'>Clear</button>
+                                <button class="apply" type='submit'>Apply</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container find-content">
+        <div class="row">
+            <div class="clubs col col-xl-6 col-lg-8 col-md-10 col-sm-12">
+                <p>10 clubs in Ukraine (9 in Kyiv and 1 in Odesa).
+                    Each club meets once in a week. You can visit ANY club, it’s free for guests. No additional registration is needed.</p>
+                <div class="club">
+                    <div class="photo">
+                    </div>
+                    <div class="description">
+                        <h4 class="title">Art Talkers</h4>
+                        <div class="available-lang">
+                            <span>Meeting language: </span>
+                            <span>ENG/UKR</span>
+                            <div class="flags">
+                                <img src="./img/clubs/flags/eng.svg" alt="eng">
+                                <img src="./img/clubs/flags/ukr.svg" alt="ukr">
+                            </div>
+                        </div>
+                        <div class="schedule">
+                            <span class="days">Saturdays,</span>
+                            <span class="time">12:10-14:00</span>
+                        </div>
+                        <div class="address">
+                            <p class="street">13 Antonovycha</p>
+                            <span class="place">Krapka Koma Cafe</span>
+                            <span class="state">Lva Tolstogo</span>
+                        </div>
+                        <div class="info">
+                            <span>More info on </span>
+                            <a rel="stylesheet" href="#" class='site'>Website</a>
+                            <span id="or">OR</span>
+                            <div class="button main">Chat on Facebook</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="club">
+                    <div class="photo">
+                    </div>
+                    <div class="description">
+                        <h4 class="title">Art Talkers</h4>
+                        <div class="available-lang">
+                            <span>Meeting language: </span>
+                            <span>ENG/UKR</span>
+                            <div class="flags">
+                                <img src="./img/clubs/flags/eng.svg" alt="eng">
+                                <img src="./img/clubs/flags/ukr.svg" alt="ukr">
+                            </div>
+                        </div>
+                        <div class="schedule">
+                            <span class="days">Saturdays,</span>
+                            <span class="time">12:10-14:00</span>
+                        </div>
+                        <div class="address">
+                            <p class="street">13 Antonovycha</p>
+                            <span class="place">Krapka Koma Cafe</span>
+                            <span class="state">Lva Tolstogo</span>
+                        </div>
+                        <div class="info">
+                            <span>More info on </span>
+                            <a rel="stylesheet" href="#" class='site'>Website</a>
+                            <span id="or">OR</span>
+                            <div class="button main">Chat on Facebook</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="club">
+                    <div class="photo">
+                    </div>
+                    <div class="description">
+                        <h4 class="title">Art Talkers</h4>
+                        <div class="available-lang">
+                            <span>Meeting language: </span>
+                            <span>ENG/UKR</span>
+                            <div class="flags">
+                                <img src="./img/clubs/flags/eng.svg" alt="eng">
+                                <img src="./img/clubs/flags/ukr.svg" alt="ukr">
+                            </div>
+                        </div>
+                        <div class="schedule">
+                            <span class="days">Saturdays,</span>
+                            <span class="time">12:10-14:00</span>
+                        </div>
+                        <div class="address">
+                            <p class="street">13 Antonovycha</p>
+                            <span class="place">Krapka Koma Cafe</span>
+                            <span class="state">Lva Tolstogo</span>
+                        </div>
+                        <div class="info">
+                            <span>More info on </span>
+                            <a rel="stylesheet" href="#" class='site'>Website</a>
+                            <span id="or">OR</span>
+                            <div class="button main">Chat on Facebook</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="club">
+                    <div class="photo">
+                    </div>
+                    <div class="description">
+                        <h4 class="title">Art Talkers</h4>
+                        <div class="available-lang">
+                            <span>Meeting language: </span>
+                            <span>ENG/UKR</span>
+                            <div class="flags">
+                                <img src="./img/clubs/flags/eng.svg" alt="eng">
+                                <img src="./img/clubs/flags/ukr.svg" alt="ukr">
+                            </div>
+                        </div>
+                        <div class="schedule">
+                            <span class="days">Saturdays,</span>
+                            <span class="time">12:10-14:00</span>
+                        </div>
+                        <div class="address">
+                            <p class="street">13 Antonovycha</p>
+                            <span class="place">Krapka Koma Cafe</span>
+                            <span class="state">Lva Tolstogo</span>
+                        </div>
+                        <div class="info">
+                            <span>More info on </span>
+                            <a rel="stylesheet" href="#" class='site'>Website</a>
+                            <span id="or">OR</span>
+                            <div class="button main">Chat on Facebook</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="club">
+                    <div class="photo">
+                    </div>
+                    <div class="description">
+                        <h4 class="title">Art Talkers</h4>
+                        <div class="available-lang">
+                            <span>Meeting language: </span>
+                            <span>ENG/UKR</span>
+                            <div class="flags">
+                                <img src="./img/clubs/flags/eng.svg" alt="eng">
+                                <img src="./img/clubs/flags/ukr.svg" alt="ukr">
+                            </div>
+                        </div>
+                        <div class="schedule">
+                            <span class="days">Saturdays,</span>
+                            <span class="time">12:10-14:00</span>
+                        </div>
+                        <div class="address">
+                            <p class="street">13 Antonovycha</p>
+                            <span class="place">Krapka Koma Cafe</span>
+                            <span class="state">Lva Tolstogo</span>
+                        </div>
+                        <div class="info">
+                            <span>More info on </span>
+                            <a rel="stylesheet" href="#" class='site'>Website</a>
+                            <span id="or">OR</span>
+                            <div class="button main">Chat on Facebook</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="club">
+                    <div class="photo">
+                    </div>
+                    <div class="description">
+                        <h4 class="title">Art Talkers</h4>
+                        <div class="available-lang">
+                            <span>Meeting language: </span>
+                            <span>ENG/UKR</span>
+                            <div class="flags">
+                                <img src="./img/clubs/flags/eng.svg" alt="eng">
+                                <img src="./img/clubs/flags/ukr.svg" alt="ukr">
+                            </div>
+                        </div>
+                        <div class="schedule">
+                            <span class="days">Saturdays,</span>
+                            <span class="time">12:10-14:00</span>
+                        </div>
+                        <div class="address">
+                            <p class="street">13 Antonovycha</p>
+                            <span class="place">Krapka Koma Cafe</span>
+                            <span class="state">Lva Tolstogo</span>
+                        </div>
+                        <div class="info">
+                            <span>More info on </span>
+                            <a rel="stylesheet" href="#" class='site'>Website</a>
+                            <span id="or">OR</span>
+                            <div class="button main">Chat on Facebook</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="map col-xl-6">
+                <div class="wrapper-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28739.985234472646!2d30.496418325495856!3d50.45449257117753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1551449791032" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    translate text. 
+
+    </main>
+    <footer class="page_wrapper__footer">
+    <div class="container">
+        <div class="row">
+            <p class='copy'><span class="show-inline-lg">Copyright </span>© 2018 Toastmasters Ukraine</p>
+            <div class="social">
+                <p >Follow us<span class="show-inline-lg"> on social media</span>:</p>
+                <div class="links">
+                    <a href="https://www.facebook.com/Toastmasters.Ukraine/"><i class="fab fa-facebook-f"></i></a><a href="https://twitter.com/Toastmasters_ua"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="/public/build/img/heart.svg" alt="heart" class="show-inline-lg">
+                <img src="/public/build/img/heart-mobile.svg" alt="heart" class="hide-lg">
+                <span>to</span><a href="https://tebenko.com" target="_blank"><img class="tebenko" src="/public/build/img/logo_tebenko.svg" alt="tebenko"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="http://localhost:35729/livereload.js"></script>
+<script type="text/javascript" src="build/main.js"></script></body>
+</html>
