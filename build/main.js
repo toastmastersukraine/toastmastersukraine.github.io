@@ -20957,7 +20957,7 @@ var main_banner = {
         $('.main_banner_carousel .carousel').slick({
             prevArrow: '.main_banner_carousel-prev',
             nextArrow: '.main_banner_carousel-next',
-            lidesToShow: 1,
+            slidesToShow: 1,
             slidesToScroll: 1
             // autoplay: true
         });
@@ -20966,7 +20966,6 @@ var main_banner = {
         $('#scroll-btn').click(function () {
             var nextSection = $('.benefits').offset().top;
             $('html,body').animate({ scrollTop: nextSection }, 'slow');
-            console.log(nextSection);
         });
     }
 };
