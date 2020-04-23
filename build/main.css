@@ -5907,7 +5907,7 @@ body {
   font-family: "Lato";
   font-weight: 200;
   font-style: normal;
-  background: #dadada;
+  background: #f3f1f1;
   line-height: 1.2;
 }
 body.body--overflow {
@@ -5944,6 +5944,14 @@ p {
 }
 p + p {
   margin-top: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 200;
 }
 
 *:focus {
@@ -6006,12 +6014,7 @@ ul {
 
 .card_title {
   font-size: 23px;
-  margin: 0 0 30px;
-}
-@media (min-width: 768px) {
-  .card_title {
-    margin: 0 0 28px;
-  }
+  margin: 0;
 }
 @media (min-width: 992px) {
   .card_title {
@@ -6699,6 +6702,18 @@ header .lang-and-social .lang:after {
     display: block;
   }
 }
+.benefits_item_description {
+  font-size: 17px;
+  font-weight: 100;
+  line-height: 1.35;
+  margin-top: 15px;
+}
+@media (min-width: 992px) {
+  .benefits_item_description {
+    padding: 0 10px 0 30px;
+    min-height: 66px;
+  }
+}
 .benefits_text {
   padding: 34px 24px 30px 30px;
 }
@@ -6713,55 +6728,6 @@ header .lang-and-social .lang:after {
   .benefits_text {
     padding: 30px 0;
   }
-}
-@media (min-width: 992px) {
-  .benefits_text_list {
-    min-height: 172px;
-    padding: 0 10px 0 30px;
-  }
-}
-@media (min-width: 1200px) {
-  .benefits_text_list {
-    min-height: auto;
-  }
-}
-.benefits_text_line {
-  font-size: 17px;
-  font-weight: 300;
-  line-height: 1.35;
-  position: relative;
-}
-@media (min-width: 992px) {
-  .benefits_text_line {
-    margin-bottom: 15px;
-  }
-}
-.benefits_text_line:not(:last-child) {
-  margin-bottom: 22px;
-}
-@media (min-width: 768px) {
-  .benefits_text_line:not(:last-child) {
-    margin-bottom: 23px;
-  }
-}
-@media (min-width: 992px) {
-  .benefits_text_line:not(:last-child) {
-    margin-bottom: 20px;
-  }
-}
-.benefits_text_line::before {
-  content: "";
-  position: absolute;
-  top: 3px;
-  width: 20px;
-  height: 20px;
-  background: url(ad7e2171e344b64ae5eddfe74a48dd76.svg);
-  border-radius: 50%;
-}
-.benefits_text_line span {
-  padding-left: 35px;
-  display: block;
-  font-weight: 100;
 }
 .benefits_img {
   padding-bottom: 30px;
@@ -7287,6 +7253,9 @@ header .lang-and-social .lang:after {
     padding-right: 30px;
   }
 }
+.instructions_examples_wrapper {
+  width: 100%;
+}
 @media (min-width: 768px) {
   .instructions_examples_wrapper {
     width: 70%;
@@ -7301,6 +7270,28 @@ header .lang-and-social .lang:after {
   -webkit-box-shadow: 0 0 3px 0 rgba(56, 64, 71, 0.3);
           box-shadow: 0 0 3px 0 rgba(56, 64, 71, 0.3);
   background-size: contain;
+}
+.instructions_examples iframe {
+  width: 100%;
+  max-width: 480px;
+  height: 51vw;
+  margin: 0 auto;
+  display: block;
+}
+@media (min-width: 576px) {
+  .instructions_examples iframe {
+    height: 270px;
+  }
+}
+@media (min-width: 992px) {
+  .instructions_examples iframe {
+    height: 190px;
+  }
+}
+@media (min-width: 1200px) {
+  .instructions_examples iframe {
+    height: 250px;
+  }
 }
 
 .main_banner_wrapper {
@@ -7818,12 +7809,112 @@ header .lang-and-social .lang:after {
   opacity: 1;
 }
 
-.index {
-  color: #6610f2;
+.typography ul {
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .typography ul {
+    margin-top: 28px;
+  }
+}
+@media (min-width: 992px) {
+  .typography ul {
+    min-height: 172px;
+    padding: 0 10px 0 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .typography ul {
+    min-height: auto;
+  }
+}
+.typography li {
+  font-size: 17px;
+  line-height: 1.35;
+  padding-left: 35px;
+  display: block;
+  font-weight: 100;
+  position: relative;
+  text-align: left;
+}
+.typography li:not(:last-child) {
+  margin-bottom: 22px;
+}
+@media (min-width: 768px) {
+  .typography li:not(:last-child) {
+    margin-bottom: 23px;
+  }
+}
+@media (min-width: 992px) {
+  .typography li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.typography li::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: url(ad7e2171e344b64ae5eddfe74a48dd76.svg);
+  border-radius: 50%;
 }
 
-.index {
-  color: #6610f2;
+.page--about .title {
+  max-width: none;
+}
+.page--about .how_it_works__video {
+  margin-top: 30px;
+}
+@media (min-width: 992px) {
+  .page--about .how_it_works__video {
+    margin-top: 50px;
+  }
+}
+.page--about .how_it_works__video iframe {
+  width: 100%;
+  max-width: 480px;
+  height: 51vw;
+  margin: 0 auto;
+  display: block;
+}
+@media (min-width: 576px) {
+  .page--about .how_it_works__video iframe {
+    height: 270px;
+  }
+}
+@media (min-width: 992px) {
+  .page--about .how_it_works__video iframe {
+    max-width: 854px;
+    height: 480px;
+  }
+}
+@media (min-width: 768px) {
+  .page--about .benefits_text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .page--about .benefits_text ul {
+    min-height: 172px;
+  }
+}
+@media (min-width: 992px) {
+  .page--about .instructions_examples_wrapper img {
+    max-height: 200px;
+    margin-left: auto;
+    display: block;
+  }
+}
+.page--about .instructions_item:last-child .text {
+  margin-top: 30px;
+}
+@media (min-width: 992px) {
+  .page--about .instructions_item:last-child .text {
+    margin-top: 0;
+  }
 }
 
 .social {
