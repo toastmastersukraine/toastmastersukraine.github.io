@@ -55,7 +55,7 @@
                     </li>
                     <li class="main_menu_item main_menu_item--lang_mob">
                         <div class="hover-line">
-                            <a class="main_menu_item_link" href="#">Українська</a>
+                            <a class="main_menu_item_link active" href="#">Українська</a>
                         </div>
                     </li>
                 </ul>
@@ -319,7 +319,7 @@
         <div class="footer_content">
             <p class='footer_copy'>
                 <span class="d-none d-lg-inline">Copyright</span>
-                <span>@</span>
+                <span>©</span>
                 <span class="d-md-none d-lg-inline">2018</span>
                 <span>Toastmasters Ukraine</span>
             </p>
@@ -361,6 +361,36 @@
 </footer>
 
 </div>
+<div class="preloader_wrapper js--preloader">
+    <div class='preloader'>
+        <div class='spinner'>
+            <div class='item'></div>
+            <div class='item'></div>
+            <div class='item'></div>
+            <div class='item'></div>
+            <div class='item'></div>
+            <div class='item'></div>
+            <div class='item'></div>
+            <div class='item'></div>
+        </div>
+    </div>
+
+    <svg>
+        <defs>
+            <filter id='goo'>
+                <feGaussianBlur in='SourceGraphic' stdDeviation='8' result='blur' />
+                <feColorMatrix in='blur' mode='matrix' values='
+                                                           1 0 0 0 0 
+                                                           0 1 0 0 0
+                                                           0 0 1 0 0
+                                                           0 0 0 50 -8' result='goo' />
+                <feBlend in='SourceGraphic' in2='goo' />
+            </filter>
+        </defs>
+    </svg>
+
+</div>
+
 <script src="http://localhost:35729/livereload.js"></script>
 <script type="text/javascript" src="build/main.js"></script></body>
 </html>

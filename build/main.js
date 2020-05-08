@@ -20952,8 +20952,11 @@ exports.default = header;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-var main_banner = {
+var mainBanner = {
     init: function init() {
+        $('.main_banner_carousel .carousel').on('init', function (event, slick, direction) {
+            $('.js--preloader').remove();
+        });
         $('.main_banner_carousel .carousel').slick({
             prevArrow: '.main_banner_carousel-prev',
             nextArrow: '.main_banner_carousel-next',
@@ -20970,7 +20973,7 @@ var main_banner = {
     }
 };
 
-exports.default = main_banner;
+exports.default = mainBanner;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
