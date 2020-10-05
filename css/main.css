@@ -9054,6 +9054,11 @@ body.sticky .clubs__header {
 .page--contacts .contacts__link {
   margin-top: 25px;
 }
+@media (min-width: 768px) {
+  .page--contacts .contacts .title_main {
+    margin-bottom: 40px;
+  }
+}
 .page--contacts .visit_us .typography {
   margin-top: 31px;
   text-align: center;
